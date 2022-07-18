@@ -35,28 +35,38 @@
     ></script>
   </head>
   <body>
-    <div class="container-fluid sticky-top nav-container">
-      <nav class="d-flex justify-content-between mx-5">
-        <a href="/" title="Homepage">
-          <img
-            src="images/logo.png"
-            class="logo d-none d-md-block"
-            alt="Logo"
-          />
-          <img
-            src="images/logo-small.jpg"
-            class="logo d-block d-md-none"
-            alt="Logo"
-          />
-        </a>
-        <ul>
-          <li><a href="/" class="active" title="Homepage">Home</a></li>
-          <li><a href="/about.html" title="">About</a></li>
-          <li><a href="/work.html" title="">Work</a></li>
-          <li><a href="/contact.html" title="">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar sticky-top navbar-light navbar-expand-sm bg-light">
+      <a class="navbar-brand" href="/" title="Homepage">
+        <img
+          class="logo ms-2 ms-sm-5"
+          src="images/She Codes.png"
+          alt="SheCodes logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler me-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end me-5"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav">
+          <a class="nav-link main-link" aria-current="page" href="/">Home</a>
+          <a class="nav-link item-link" href="/about.html">About</a>
+          <a class="nav-link item-link" href="/work.html">Work</a>
+          <a class="nav-link item-link" href="/contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+
     <div class="hero">
       <h1 class="pt-4">Recipe Collection</h1>
       <h2 class="pb-4 pb-sm-3">
@@ -67,11 +77,11 @@
 
     <div class="container mt-5">
       <div class="row mb-3">
-        <div class="col-6 recipe-card">
+        <div class="col-sm recipe-card">
           <img class="img-fluid mb-3" src="images/1.png" alt="" />
           <div><a href="#"> Wet Vegetable Spring Rolls</a></div>
         </div>
-        <div class="col-6 recipe-card">
+        <div class="col-sm recipe-card">
           <img class="img-fluid mb-3" src="images/2.png" alt="" />
           <div>
             <a href="#">Wet Vegetable Spring Rolls</a>
@@ -79,66 +89,79 @@
         </div>
       </div>
       <div class="row mb-3">
-        <div class="col recipe-card">
+        <div class="col-sm recipe-card">
           <img class="img-fluid mb-3" src="images/3.png" alt="" />
           <div><a href="#"> Wet Vegetable Spring Rolls</a></div>
         </div>
-        <div class="col recipe-card">
+        <div class="col-sm recipe-card">
           <img class="img-fluid mb-3" src="images/4.png" alt="" />
           <div><a href="#">Wet Vegetable Spring Rolls</a></div>
         </div>
       </div>
       <div class="row mb-3">
-        <div class="col recipe-card">
+        <div class="col-sm recipe-card">
           <img class="img-fluid mb-3" src="images/5.png" alt="" />
           <div><a href="#"> Wet Vegetable Spring Rolls</a></div>
         </div>
-        <div class="col recipe-card">
+        <div class="col-sm recipe-card">
           <img class="img-fluid mb-3" src="images/6.png" alt="" />
           <div><a href="#">Wet Vegetable Spring Rolls</a></div>
         </div>
       </div>
       <div class="row mb-3">
-        <div class="col recipe-card">
+        <div class="col-sm recipe-card">
           <img class="img-fluid mb-3" src="images/2.png" alt="" />
           <div><a href="#"> Wet Vegetable Spring Rolls</a></div>
         </div>
-        <div class="col recipe-card">
+        <div class="col-sm recipe-card">
           <img class="img-fluid mb-3" src="images/8.png" alt="" />
           <div><a href="#">Wet Vegetable Spring Rolls</a></div>
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="mt-5">
       <div class="d-flex justify-content-between">
-        <div>
+        <div class="d-none d-md-block">
           <a href="/" title="Homepage">
             <img
               src="images/She Codes.png"
-              class="logo d-none d-md-block footer-logo"
+              class="logo footer-logo"
               alt="Logo"
             />
           </a>
         </div>
         <div class="icons">
           <a
-            href="https://www.instagram.com"
+            href="https://www.linkedin.com/in/olga-gushchyna-3a8660200/"
             target="_blank"
-            title="Instagram profile"
-            ><i class="fa-brands fa-instagram icon"></i
+            title="Linkedin profile"
+            ><i class="fa-brands fa-linkedin icon"></i
           ></a>
-          <a href="https://www.github.com" target="_blank">
-            <i class="fa-brands fa-github icon" title="Github profile"></i
+          <a
+            href="https://github.com/OlgaGushchyna"
+            target="_blank"
+            title="Github profile"
+          >
+            <i class="fa-brands fa-github icon"></i
           ></a>
-          <a href="https://www.facebook.com" target="_blank"
-            ><i class="fa-brands fa-facebook icon" title="Facebook profile"></i
+          <a
+            href="https://www.facebook.com/olga.guschina.14/"
+            target="_blank"
+            title="Facebook profile"
+            ><i class="fa-brands fa-facebook icon"></i
           ></a>
         </div>
-        <p>© 2022 SheCodes All rights reserved.</p>
+        <p class="d-none d-md-block">© 2022 SheCodes All rights reserved.</p>
       </div>
     </footer>
+
     <p class="text-center mt-1 sign">
-      ✌ This project was coded Olga Gushchyna and it is open-sourced
+      ✌ This project was coded Olga Gushchyna and it is
+      <a
+        href="https://github.com/OlgaGushchyna/final-project-responsive"
+        target="_blank"
+        >open-sourced</a
+      >
     </p>
   </body>
 </html>
