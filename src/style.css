@@ -5,6 +5,7 @@
   --background-nav-color: #f8f9fa;
   --recipe-title-color: #272142;
   --active-link-color: #662eed;
+  --step-color: #f65282;
 }
 
 body {
@@ -138,6 +139,22 @@ h4 {
   font-size: 10px;
 }
 
+.recipe {
+  max-width: 760px;
+}
+.recipe img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-height: 450px;
+}
+.recipe p {
+  border-bottom: 1px dashed #67d5d2;
+}
+
+.step {
+  color: var(--step-color);
+}
 @media (max-width: 1200px) {
   .about-me h2 {
     font-size: 32px;
@@ -221,6 +238,9 @@ h4 {
   }
 
   .about-me p {
+    text-align: center;
+  }
+  .recipe h2 {
     text-align: center;
   }
 }
